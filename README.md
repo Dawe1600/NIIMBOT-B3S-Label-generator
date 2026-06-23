@@ -16,6 +16,9 @@ Aplikacja z graficznym interfejsem użytkownika (GUI) napisanym w **PyQt5**, sł
 - `test_etykiety.py` - Moduł odpowiedzialny za generowanie obrazu etykiety (PNG) na podstawie TAG-u i ikony.
 - `test_druku.py` - Moduł realizujący komunikację z drukarką NIIMBOT i wysyłanie poleceń drukowania.
 
+##Stylistyka (QSS)
+Interfejs korzysta z nowoczesnego, ciemnego motywu wizualnego. Wszystkie elementy, takie jak zaokrąglenia pól tekstowych, niebieskie podświetlenia aktywne (#89b4fa) czy przerywana ramka podglądu etykiety, są w pełni modyfikowalne w pliku style.qss.
+
 ## Wymagania i instalacja
 
 1. Upewnij się, że masz zainstalowanego Pythona w wersji 3.8 lub nowszej.
@@ -25,3 +28,9 @@ Aplikacja z graficznym interfejsem użytkownika (GUI) napisanym w **PyQt5**, sł
    python -m venv .venv
    source .venv/bin/activate  # Na Windows: .venv\Scripts\activate
    pip install -r requirements.txt
+   ```
+4. Uruchomienie aplikacji
+Aplikację można uruchomić bezpośrednio za pomocą pliku wykonywalnego systemu Windows:
+```bash
+kreator_naklejek_gui.bat
+```
