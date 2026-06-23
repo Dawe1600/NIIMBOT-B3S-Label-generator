@@ -1,0 +1,77 @@
+/* Główne okno i domyślny tekst */
+QWidget {
+    background-color: #1e1e2e; /* Ciemnoszare tło */
+    color: #cdd6f4; /* Jasnoszary tekst */
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* Podgląd etykiety (QLabel) - celujemy tylko w to konkretne ID */
+QLabel#podglad_etykiety {
+    background-color: #181825; /* Nieco ciemniejsze tło dla wyróżnienia */
+    border: 2px dashed #45475a;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Usuwamy tło i ramki dla wszystkich innych etykiet (np. tytułu na pasku) */
+QLabel {
+    background: transparent;
+    border: none;
+}
+
+/* Pole tekstowe (QLineEdit) */
+QLineEdit {
+    background-color: #313244;
+    border: 1px solid #45475a;
+    border-radius: 6px;
+    padding: 8px;
+    color: #cdd6f4;
+}
+
+QLineEdit:focus {
+    border: 1px solid #89b4fa; /* Niebieska ramka podczas pisania */
+}
+
+/* Lista rozwijana (QComboBox) */
+QComboBox {
+    background-color: #313244;
+    border: 1px solid #45475a;
+    border-radius: 6px;
+    padding: 8px;
+    color: #cdd6f4;
+}
+
+QComboBox:hover {
+    border: 1px solid #89b4fa;
+}
+
+QComboBox::drop-down {
+    border-left: 1px solid #45475a;
+    width: 30px;
+}
+
+QComboBox::down-arrow {
+    image: url(ikony/strzalka.png); /* Ścieżka do Twojej ikonki */
+    width: 14px;
+    height: 14px;
+}
+
+/* Przyciski (QPushButton) */
+QPushButton {
+    background-color: #89b4fa; /* Niebieski przycisk akcji */
+    color: #11111b; /* Ciemny tekst na jasnym przycisku */
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+QPushButton:hover {
+    background-color: #b4befe; /* Jaśniejszy niebieski po najechaniu */
+}
+
+QPushButton:pressed {
+    background-color: #74c7ec; /* Kolor podczas kliknięcia */
+}
