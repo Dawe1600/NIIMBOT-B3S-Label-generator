@@ -16,7 +16,7 @@ Aplikacja z graficznym interfejsem użytkownika (GUI) napisanym w **PyQt5**, sł
 - `test_etykiety.py` - Moduł odpowiedzialny za generowanie obrazu etykiety (PNG) na podstawie TAG-u i ikony.
 - `test_druku.py` - Moduł realizujący komunikację z drukarką NIIMBOT i wysyłanie poleceń drukowania.
 
-##Stylistyka (QSS)
+## Stylistyka (QSS)
 Interfejs korzysta z nowoczesnego, ciemnego motywu wizualnego. Wszystkie elementy, takie jak zaokrąglenia pól tekstowych, niebieskie podświetlenia aktywne (#89b4fa) czy przerywana ramka podglądu etykiety, są w pełni modyfikowalne w pliku style.qss.
 
 ## Wymagania i instalacja
